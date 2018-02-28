@@ -24,7 +24,7 @@ end
 
 def can_be_created_in_a_block(args = {})
   Movie.create do |m|
-    m.args = m.args
+    m.title = Movie.title
   end
 end
 
